@@ -1,0 +1,67 @@
+#map{
+	width:90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a{
+	color: orange;
+	font-weight: light;
+	font-family: 'Nunito', sans-serif;
+
+}
+#sidebar{
+	font-family: Nunito;
+}
+
+.info{
+	background-color: orange;
+	color: white;
+
+}
+.sidebar{
+	border-left: orange solid 5px; 
+
+}
+.profile-pic{
+	border-radius: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+.error{
+	text-align: center;
+	color: red;
+}
+.success{
+	text-align: center;
+	color: green;
+}
+
+.prestige{
+	font-weight: lighter;
+}
+
+#search-bar{
+	margin-top: 3%;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-color: transparent;
+	font-size: 200%;
+	color:#757575;
+}
+.clickable{
+	font-size:120%;
+	color: orange;
+}
+#search-bar:focus {
+    outline: none;
+}
+#logo{
+	position: static;
+}
+.verticalLine{
+	margin-top: 15px;
+	border-left: solid #9E9E9E;
+}

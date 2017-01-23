@@ -1,0 +1,19 @@
+#logo{
+	height: 300%;
+}
+
+#search-bar{
+	width:100%;
+	border-radius: 5%;
+}
+.nav-item{
+	margin: 15%;
+}
+.navigation{
+	height: 100%;
+}
+
+.verticalLine {
+    border-left: thick solid black;
+    height: 100%;
+}

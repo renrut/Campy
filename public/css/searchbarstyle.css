@@ -1,0 +1,4 @@
+textarea:focus, input:focus{
+	position: static;
+    outline: none;
+}

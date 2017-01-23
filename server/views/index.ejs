@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/dependencies %>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    
+    <script src="js/MapScripts.js"></script>
+    <title>Campy</title>
+  </head>
+  <body>
+	<div id="everything">
+	  <!-- SearchBar -->
+
+	  	<div id="search" >
+	  		<div class="row">
+	  			<div class="col-sm-4">
+			  		<a href="/"><img class="pull-right" src="img/logo.png" id="logo" alt="Campy"></img></a>
+			  	</div>
+			  	<div class="col-sm-4 verticalLine">
+			  		<input id="search-bar" type="text" placeholder="Where would you like to camp?"></input>
+			  	</div>
+				<% if (typeof user == 'object' && user) { %>
+				<div class="col-sm-4">
+					<div class="col-sm-6">
+						<div class="nav-btn">
+							<a class='clickable' href='/site'>+Add a Campsite</a>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="login-nav-btn user pull-right">
+							<a class='clickable' href='/profile/<%= user.username %>'>
+								<div class="row">
+									<%= user.username %>
+								</div>
+								<div class="row prestige">
+									<%= user.prestige %> pts.
+								</div>
+								</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="login-nav-btn">
+							<img id='profile-pic' class='profile-pic' src='img/profile/default.png'>
+						</div>
+					</div>
+				</div>
+				<% }else{ %>
+
+				<div class="col-sm-4">
+					<div class="col-sm-6">
+						<div class="nav-btn">
+							<a class='clickable' href='/site'>+Add a Campsite</a>
+						</div>
+					</div>
+
+					<div class="col-sm-3">
+						<div class="nav-btn">
+							<a class='clickable' href='/register'>Register</a>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="nav-btn">
+							<a class='clickable' href='/login'>Login</a>
+						</div>
+					</div>
+				</div>
+
+				<% } %>
+
+			</div>
+
+		</div>
+
+		<!-- Map -->
+	  	<div class="row">
+	    	<div id="map"></div>
+	    </div>
+
+	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUimB4-PZ_y2N96diVv7i95xPIsayoF3E&callback=initMap">
+	    </script>
+	</div>
+	<div id="sidebar">
+	</div>
+  </body>
+</html>
